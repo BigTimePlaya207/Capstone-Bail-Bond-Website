@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.About-title {
+  color: white;
+  font-size: 3rem;
+  margin-left: 300px;
+  margin-top: 40px;
+}
+
+.owner-background{
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.owner-info{
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+
+}
+
+.mission-title{
+  font-size: 1.5rem;
+}
+.mission{
+  font-size: 1.2rem;
+}
+
+.background, .mission{
+  width: 90%;
+  max-width: 600px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 75px;
+}
+
+.right {
+  right: -125px; /* Move the image more to the right */
+}
+
+.left-align {
+  color: white;
+  margin-left: 0;
+  padding: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.owner-info {
+  margin-top: 20px;
+}
+
+.mission {
+  line-height: 1.8; /* Adjusted line-height for better readability */
+  white-space: pre-wrap; /* Preserve line breaks */
+}
+
