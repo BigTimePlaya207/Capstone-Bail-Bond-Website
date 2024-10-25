@@ -1,58 +1,60 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
-import FaqPage from './pages/FaqPage';
-import PaymentPage from './pages/PaymentPage';
-import QuickLinkPage from "./pages/QuickLinkPage";
-import TermsOfServicePage from './pages/TermsOfServicePage';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'; // Import React Library to create components
+import ReactDOM from 'react-dom/client'; // Import REACT DOM for rendering components to the DOM
+import './index.css'; // Import global CSS styles
+import App from './App'; // Import the main App component
+import AboutPage from './pages/AboutPage'; //Import AboutPage component
+import ContactPage from './pages/ContactPage'; //Import ContactPage component
+import FaqPage from './pages/FaqPage'; //Import FaqPage component 
+import PaymentPage from './pages/PaymentPage'; //Import PaymentPage component
+import QuickLinkPage from "./pages/QuickLinkPage"; //Import QuickLinkPage component
+import TermsOfServicePage from './pages/TermsOfServicePage'; //Import TermsOfServicePage
+import reportWebVitals from './reportWebVitals'; //Import for measuring performance metrics
 import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+  createBrowserRouter, //Import method to create a browser router for navigation
+  RouterProvider, // Import RouterProvider to provide routing capabilities
+} from "react-router-dom"; // Import routing library for React
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'; // Import PrivacyPolicyPage component
 
 // router to go to different pages
 const router = createBrowserRouter([
   // paths to go to each seperate page
   {
-    path:"/",
-    element: <App/>,
+    path:"/", // Home route
+    element: <App/>, //Render the App component for the home page
   },
   {
-    path:"/about",
-    element: <AboutPage/>,
+    path:"/about", // Route for the About page
+    element: <AboutPage/>, //Render the AboutPage component 
   },
   {
-    path:"/contact",
-    element: <ContactPage/>,
+    path:"/contact", // Route for Contact page
+    element: <ContactPage/>, //Render the ContactPage component 
   },
   {
-    path:"/faq",
-    element: <FaqPage/>,
+    path:"/faq", // Route for Faq page
+    element: <FaqPage/>, // Render the FaqPage component
   },
   {
-    path:"/payment",
-    element: <PaymentPage/>,
+    path:"/payment", // Route for the Payment Page
+    element: <PaymentPage/>, //Render the Payment Page 
   },
   {
-    path:"/quick",
-    element: <QuickLinkPage/>,
+    path:"/quick", // Route for the QuickLink page
+    element: <QuickLinkPage/>, // Render the QuickLink page
   },
   {
-    path:"/term",
-    element: <TermsOfServicePage/>,
+    path:"/term", // Route for the TermofService page
+    element: <TermsOfServicePage/>, //Render the QuickLink page
   },
   {
-    path:"/privacy",
-    element: <PrivacyPolicyPage/>,
+    path:"/privacy", // Route for the Privacy Policy page
+    element: <PrivacyPolicyPage/>, // Render the Privacy Policy Page
   },
 ]);
 
+// Get the root element from the HTML file
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//Render the RouteProvider with the defined router to manage navigation
 root.render(
   <RouterProvider router={router} /> 
 );

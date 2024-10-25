@@ -1,69 +1,78 @@
+/* Reset default margin for the body element and set the font family */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set the font family to Arial or sans-serif fallback */
 }
 
+/* Styling for the About Section title */
 .About-title {
-  color: white;
-  font-size: 3rem;
-  margin-left: 300px;
-  margin-top: 40px;
+  color: white; /* Set text color to white */
+  font-size: 3rem; /* Set font size to 3rem */
+  margin-left: 300px; /* Add left margin of 300px */
+  margin-top: 40px; /* Add top margin of 40px */
 }
 
+/* Styling for the owner background text */
 .owner-background{
-  font-size: 1.2rem;
-  margin-bottom: 40px;
+  font-size: 1.2rem; /* Set font size to 1.2rem */
+  margin-bottom: 40px; /*Add bottom margin of 40px */
 }
 
+/* Styling for the owner information */
 .owner-info{
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-
+  font-size: 1.2rem; /* Set font size to 1.2rem */
+  margin-bottom: 40px; /* Add bottom margin of 40px */
+  margin-top: 20px; /* Add top margin of 20px */
 }
 
+/* Styling for mission title */
 .mission-title{
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Set font size to 1.5rem */
 }
+
+/* Styling for mission text */
 .mission{
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Set font size to 1.2rem */
 }
 
+/* Common styles for background and mission sections */
 .background, .mission{
-  width: 90%;
-  max-width: 600px;
-  text-align: justify;
-  margin-bottom: 40px;
+  width: 90%; /* Set maximum width to 90% of the parent container */
+  max-width: 600px; /* Set maximum width to 600px */
+  text-align: justify; /* Justify the text alignment */
+  margin-bottom: 40px; /* Add bottom margin of 40px */
 }
 
+/* Styles for split layout */
 .split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  overflow-x: hidden;
-  padding-top: 20px;
+  height: 100%; /* Set height to 100% of the parent */
+  width: 50%; /* Set width to 50% */
+  position: fixed; /* Fix position to the viewport */
+  z-index: 1; /* Set z-index for stacking order */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  padding-top: 20px; /* Add top padding of 20px */
 }
 
+/* Positioning for the left split section */
 .left {
-  left: 75px;
+  left: 75px; /* Position 75px from the left */
 }
 
+/* Positioning for the right split section */
 .right {
   right: -125px; /* Move the image more to the right */
 }
 
+/* Left-aligned text styles */
 .left-align {
-  color: white;
-  margin-left: 0;
-  padding: 20px;
-  text-align: left;
-  line-height: 1.5;
+  color: white; /* Set text color to white */
+  margin-left: 0; /* Remove left margin */
+  padding: 20px; /* Add padding of 20px */
+  text-align: left; /* Left align text */
+  line-height: 1.5; /* Set line height to 1.5 for spacing */
 }
 
-.owner-info {
-  margin-top: 20px;
-}
-
+/* Styles for mission text  */
 .mission {
   line-height: 1.8; /* Adjusted line-height for better readability */
   white-space: pre-wrap; /* Preserve line breaks */
