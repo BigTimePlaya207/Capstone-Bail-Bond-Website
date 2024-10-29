@@ -7,7 +7,7 @@ function AboutPage() {
     <MainLayout> {/* Use MainLayout to wrap the content for consistent styling and structure */}
       <div>
         
-        <h1 className='About-title'>About US</h1> {/* Main heading for the About page */}
+        <h1 className='About-title'>About Us</h1> {/* Main heading for the About page */}
         <div class='split left'> {/* Left section of the split layout */}
           <div class='left-align'> {/* Container for left-aligned text */}
             <p className='owner-background'>
@@ -15,9 +15,9 @@ function AboutPage() {
               Stanley Bail Bonds LLC was formed in 2012, in Georgetown, SC.
               Our services, however, span much farther reaching across several states, including SC, NC, FL, TX, &amp; TN.
             </p>
+            <h1 className="owner-name">Owner: Michael Stanley</h1>
             <div className='owner-info'> {/* Container for owner information */}
               <p style={{ color: 'white' }}> {/* Inline style for text color */}
-                <strong>Owner: Michael Stanley</strong><br /> {/* Owner's Name in bold */}
                 Licensed Bail Bond Agent<br /> {/* Owner's Qualification */}
                 Licensed Property &amp; Casualty Agent {/* Owner's Qualification */}
               </p>
