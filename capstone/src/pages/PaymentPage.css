@@ -1,0 +1,61 @@
+.payment-header{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-options-title{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.payment-options{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.payment-options img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.payment-options img:hover{
+    transform: scale(1.1);
+}
+
+.payment-options span {
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.payment-option{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment-option img{
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.payment-option img:hover{
+    transform: scale(1.1);
+}
+
+.payment-option span {
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
