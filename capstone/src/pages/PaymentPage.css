@@ -1,61 +1,71 @@
-.payment-header{
-    color: white;
-    text-align: center;
-    margin-top: 20px;
+/* Style for the payment section header */
+.payment-header {
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 20px; /* Adds a 20px margin above the header */
 }
 
-.payment-options-title{
-    color: white;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+/* Style for the title of the payment options section */
+.payment-options-title {
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the title horizontally */
+    font-size: 2.5rem; /* Sets the font size to 2.5rem (large) */
+    font-weight: bold; /* Makes the title text bold */
+    margin-bottom: 20px; /* Adds a 20px margin below the title */
 }
 
-.payment-options{
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
+/* Container for the payment options with horizontal layout */
+.payment-options {
+    color: white; /* Sets text color to white */
+    display: flex; /* Uses flexbox layout for the payment options */
+    justify-content: space-around; /* Distributes items evenly with space around each one */
+    margin-bottom: 10px; /* Adds a 10px margin below the payment options container */
 }
 
-.payment-options img{
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    transition: transform 0.2s;
+/* Styles for the images inside the payment options (icons) */
+.payment-options img {
+    width: 100px; /* Sets the image width to 100px */
+    height: 100px; /* Sets the image height to 100px */
+    object-fit: contain; /* Ensures the image is resized to fit within its container without distortion */
+    transition: transform 0.2s; /* Adds a smooth transition effect for transformations (like scaling) */
 }
 
-.payment-options img:hover{
-    transform: scale(1.1);
+/* Hover effect for the payment option images: slightly zoom in */
+.payment-options img:hover {
+    transform: scale(1.1); /* Increases the size of the image by 10% on hover */
 }
 
+/* Style for the labels next to the payment option images */
 .payment-options span {
-    color: white;
-    margin-left: 10px;
-    font-weight: bold;
+    color: white; /* Sets the text color to white */
+    margin-left: 10px; /* Adds a 10px margin to the left of the text */
+    font-weight: bold; /* Makes the text bold */
 }
 
-.payment-option{
-    color: white;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+/* Style for each individual payment option */
+.payment-option {
+    color: white; /* Sets the text color to white */
+    display: flex; /* Uses flexbox layout to align the icon and text */
+    align-items: center; /* Vertically centers the items within the flex container */
+    margin-bottom: 10px; /* Adds a 10px margin below each payment option */
 }
 
-.payment-option img{
-    width: 130px;
-    height: 130px;
-    object-fit: contain;
-    transition: transform 0.2s;
+/* Styles for the images inside individual payment options (larger icons) */
+.payment-option img {
+    width: 130px; /* Sets the image width to 130px */
+    height: 130px; /* Sets the image height to 130px */
+    object-fit: contain; /* Ensures the image is resized to fit within its container without distortion */
+    transition: transform 0.2s; /* Adds a smooth transition effect for transformations (like scaling) */
 }
 
-.payment-option img:hover{
-    transform: scale(1.1);
+/* Hover effect for the individual payment option images: slightly zoom in */
+.payment-option img:hover {
+    transform: scale(1.1); /* Increases the size of the image by 10% on hover */
 }
 
+/* Style for the labels next to the individual payment option images */
 .payment-option span {
-    color: white;
-    margin-left: 10px;
-    font-weight: bold;
+    color: white; /* Sets the text color to white */
+    margin-left: 10px; /* Adds a 10px margin to the left of the text */
+    font-weight: bold; /* Makes the text bold */
 }

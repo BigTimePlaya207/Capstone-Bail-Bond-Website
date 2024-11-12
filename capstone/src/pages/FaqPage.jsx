@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import MainLayout from '../layout/MainLayout';
-import './FaqPage.css';
+import React, { useState } from 'react'; // Importing React and useState hook to manage component state
+import MainLayout from '../layout/MainLayout'; // Importing a custom layout component for the page
+import './FaqPage.css'; // Importing the CSS styles for the FAQ page
 
+// Array containing the FAQ data with each question and its corresponding answer
 const faqData = [
     {
         question: 'What is a bailbond?',
-        answer: 'A bail bond is where a person spends money to secure the release of a person who has been arrested and is awating trial.'
+        answer: 'A bail bond is where a person spends money to secure the release of a person who has been arrested and is awaiting trial.'
     },
     {
         question: 'How long will it take for a defendant to be released once bond is posted?',
@@ -28,11 +29,11 @@ const faqData = [
         answer: 'Court dates are issued upon inmate release. It will be printed on the release paperwork given to you. Your bail bondsman will also have a copy of the court date.',
     },
     {
-        question: 'Where do i go for court?',
+        question: 'Where do I go for court?',
         answer: 'It is determined by the type of charge. Refer to your release paperwork - it should be listed there along with the address.',
     },
     {
-        question: 'If I need an attorney, but cant afford one, who should I call?',
+        question: 'If I need an attorney, but can’t afford one, who should I call?',
         answer: 'Contact the public defender office in the county where the alleged crime took place.',
     },
     {
@@ -45,25 +46,36 @@ const faqData = [
     },
 ];
 
+// FaqPage component, representing the FAQ page
 const FaqPage = () => {
+  // State to manage which FAQ item is currently open (default is null, meaning no item is open)
   const [openIndex, setOpenIndex] = useState(null);
 
+  // Function to toggle the visibility of an FAQ answer when a question is clicked
   const toggleAccordion = (index) => {
+    // If the clicked question is already open, close it (set to null). Otherwise, open it.
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <MainLayout>
-      <div className="faq-container">
-        <h1 className="faq-title">Frequently Asked Questions</h1>
+    <MainLayout> {/* Wrapping the content inside the MainLayout component */}
+      <div className="faq-container"> {/* Container for the entire FAQ section */}
+        <h1 className="faq-title">Frequently Asked Questions</h1> {/* Title of the FAQ section */}
+        
+        {/* Mapping through the faqData array to create each FAQ item */}
         {faqData.map((faq, index) => (
-          <div key={index} className="faq-item">
-            <div className="faq-question" onClick={() => toggleAccordion(index)}>
-              {faq.question}
+          <div key={index} className="faq-item"> {/* Wrapper for each individual FAQ */}
+            <div 
+              className="faq-question" // Styling for the question section
+              onClick={() => toggleAccordion(index)} // Add click handler to toggle visibility of the answer
+            >
+              {faq.question} {/* Display the question */}
             </div>
+            
+            {/* If the current question is open (i.e., the openIndex matches the current index), show the answer */}
             {openIndex === index && (
-              <div className="faq-answer">
-                {faq.answer}
+              <div className="faq-answer"> {/* Display the answer if the question is open */}
+                {faq.answer} {/* Display the answer */}
               </div>
             )}
           </div>
@@ -73,4 +85,4 @@ const FaqPage = () => {
   );
 };
 
-export default FaqPage;
+export default FaqPage; // Export the FaqPage component to be used in other parts of the app
