@@ -1,22 +1,25 @@
+/* General body styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin: 0; /* Removes the default margin around the body element */
+    font-family: Arial, sans-serif; /* Sets the font for the entire page to Arial, with a fallback to sans-serif if Arial is unavailable */
 }
 
+/* Style for elements with the class .info */
 .info {
-    color: white;
-    margin: 0.5rem 0;
-    font-size: 3rem;
-    margin-bottom: 40px;
-    gap: 10px;
+    color: white; /* Sets the text color to white */
+    margin: 0.5rem 0; /* Adds 0.5rem of margin to the top and bottom of the element */
+    font-size: 3rem; /* Sets the font size to 3rem (a large size) */
+    margin-bottom: 40px; /* Adds a specific margin of 40px to the bottom */
+    gap: 10px; /* Adds a gap of 10px between elements inside the .info container (used if there are child elements like flex items) */
 }
 
+/* Style for elements with the class .text_block */
 .text_block {
-    color: white;
-    margin-top: 75px;
-    margin-left: 0;
-    padding: 20px;
-    text-align: left;
-    line-height: 2.5;
-    font-size: 1.8rem;
+    color: white; /* Sets the text color to white */
+    margin-top: 75px; /* Adds 75px of space above the .text_block element */
+    margin-left: 0; /* Removes any default left margin (sets it to 0) */
+    padding: 20px; /* Adds 20px of padding inside the element, providing space between the text and the edges */
+    text-align: left; /* Aligns the text to the left */
+    line-height: 2.5; /* Increases the line height (spacing between lines of text) to 2.5, improving readability */
+    font-size: 1.8rem; /* Sets the font size to 1.8rem (larger than normal text, but smaller than the .info class) */
 }

@@ -17,7 +17,11 @@ body {
   font-size: 1.2rem; /* Set font size to 1.2rem */
   margin-bottom: 40px; /*Add bottom margin of 40px */
 }
-
+/* Styling for the owner name above infromation */
+.owner-name{
+  font-size: 1.5rem; /* Set font size to 1.5rem */
+  margin-bottom: -20px; /* Add bottom margin of -20px makes owner name close to owner information */
+}
 /* Styling for the owner information */
 .owner-info{
   font-size: 1.2rem; /* Set font size to 1.2rem */
