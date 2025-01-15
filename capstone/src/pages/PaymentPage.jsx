@@ -53,7 +53,7 @@ function PaymentPage() {
           {/* Zelle Payment Option */}
           <div className="payment-option">
             <img src="/images/zelle.png" alt="Zelle" /> {/* Image for Zelle payment option */}
-            <span>(843)-240-3561</span> {/* Phone number for Zelle */}
+            <span>(843)-240-9240</span> {/* Phone number for Zelle */}
           </div>
 
           {/* Credit or Debit Card Payment Option */}
@@ -65,7 +65,7 @@ function PaymentPage() {
           {/* PayPal Payment Option */}
           <div className="payment-option">
             <img src="/images/paypal.png" alt="Paypal" /> {/* Image for PayPal payment option */}
-            <span>lmstanley518@yahoo.com</span> {/* PayPal email address */}
+            <span>lmstanley5182002@yahoo.com</span> {/* PayPal email address */}
           </div>
         </div>
       </div>

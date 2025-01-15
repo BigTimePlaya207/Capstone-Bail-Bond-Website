@@ -1,0 +1,22 @@
+/* QuickLink.css */
+
+
+.link-header{
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.quicklink {
+    color: #FFF;
+    text-decoration: none;
+    display: block;  /* Makes each link a block-level element */
+    margin-bottom: 50px;  /* Space between links */
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+
+.quicklink:hover {
+    text-decoration: underline;  /* Optional: underline on hover */
+}

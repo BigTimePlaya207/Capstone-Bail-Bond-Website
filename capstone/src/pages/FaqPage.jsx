@@ -5,7 +5,7 @@ import './FaqPage.css'; // Importing the CSS styles for the FAQ page
 // Array containing the FAQ data with each question and its corresponding answer
 const faqData = [
     {
-        question: 'What is a bailbond?',
+        question: 'What is a bail bond?',
         answer: 'A bail bond is where a person spends money to secure the release of a person who has been arrested and is awaiting trial.'
     },
     {
