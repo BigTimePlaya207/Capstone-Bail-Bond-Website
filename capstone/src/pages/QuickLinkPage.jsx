@@ -7,18 +7,19 @@ function QuickLink() {
         <MainLayout>
             <h1 className='link-header'>Quick Links</h1>
             <div className="qlcontainer">
-                <p>
-                    {/* Georgetown Inmate Bookings */}
+                <div className="quicklink-item">
                     <a 
                         href="https://www.gcsheriff.org/enforcement-division/booking-and-release/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="quicklink" 
                     >
-                        Georgetown Inmate Bookings
+                        Georgetown Booking/Releases
                     </a>
-                    
-                    {/* Horry Booking/Releases */}
+                    <span className="description"> - Access information on individuals recently booked or released from Georgetown County.</span>
+                </div>
+
+                <div className="quicklink-item">
                     <a 
                         href="https://www.horrycountysc.gov/departments/sheriffs-office/detention-center/booking-releases/"
                         target="_blank" 
@@ -27,8 +28,10 @@ function QuickLink() {
                     >
                         Horry Booking/Releases
                     </a>
-          
-                    {/* Georgetown Traffic Court */}
+                    <span className="description"> - Access information on individuals recently booked or released from Horry County.</span>
+                </div>
+
+                <div className="quicklink-item">
                     <a 
                         href="https://www.gtcounty.org/220/Magistrates---Traffic-Court"
                         target="_blank" 
@@ -37,8 +40,10 @@ function QuickLink() {
                     >
                         Georgetown Traffic Court
                     </a>
-                    
-                    {/* Georgetown County Solicitor */}
+                    <span className="description"> - Find resources and details for handling traffic violations and citation in Georgtown County.</span>
+                </div>
+
+                <div className="quicklink-item">
                     <a 
                         href="https://www.gtcounty.org/227/Solicitor"
                         target="_blank" 
@@ -47,7 +52,8 @@ function QuickLink() {
                     >
                         Georgetown County Solicitor
                     </a>
-                </p>
+                    <span className="description"> - Learn about the office responsible for prosecuting criminal cases in Georgetown County.</span>
+                </div>
             </div>
         </MainLayout>
     );

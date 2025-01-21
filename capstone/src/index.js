@@ -8,13 +8,13 @@ import FaqPage from './pages/FaqPage'; //Import FaqPage component
 import PaymentPage from './pages/PaymentPage'; //Import PaymentPage component
 import QuickLinkPage from "./pages/QuickLinkPage"; //Import QuickLinkPage component
 import TermsOfServicePage from './pages/TermsOfServicePage'; //Import TermsOfServicePage
+import ReviewPage from './pages/ReviewPage'; //Import Review Page
 import reportWebVitals from './reportWebVitals'; //Import for measuring performance metrics
 import {
   createBrowserRouter, //Import method to create a browser router for navigation
   RouterProvider, // Import RouterProvider to provide routing capabilities
 } from "react-router-dom"; // Import routing library for React
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage'; // Import PrivacyPolicyPage component
-
 // router to go to different pages
 const router = createBrowserRouter([
   // paths to go to each seperate page
@@ -49,6 +49,10 @@ const router = createBrowserRouter([
   {
     path:"/privacy", // Route for the Privacy Policy page
     element: <PrivacyPolicyPage/>, // Render the Privacy Policy Page
+  },
+  {
+    path:"/review", // Route for the Review page
+    element: <ReviewPage/>, // Render the Privacy Policy Page
   },
 ]);
 

@@ -1,22 +1,41 @@
-/* QuickLink.css */
+/* QuickLinkPage.css */
 
-
-.link-header{
+.link-header {
     margin-top: 20px;
     color: white;
     margin-bottom: 100px;
     text-align: center;
 }
 
+.qlcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; /* Space between each quicklink-item */
+}
+
+.quicklink-item {
+    display: flex;
+    align-items: center; /* Align link and description vertically */
+    gap: 0.5rem; /* Space between the link and the description */
+}
+
 .quicklink {
     color: #FFF;
     text-decoration: none;
-    display: block;  /* Makes each link a block-level element */
-    margin-bottom: 50px;  /* Space between links */
     font-size: 1.5rem;
-    margin-left: 30px;
 }
 
 .quicklink:hover {
-    text-decoration: underline;  /* Optional: underline on hover */
+    text-decoration: underline; /* Underline only the link on hover */
+}
+
+.description {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white; /* Differentiates description text */
+    margin: 0; /* Removes extra space around description */
+}
+
+.description:hover {
+    text-decoration: none; /* Description remains unaffected on hover */
 }
