@@ -8,47 +8,57 @@ import FaqPage from './pages/FaqPage'; //Import FaqPage component
 import PaymentPage from './pages/PaymentPage'; //Import PaymentPage component
 import QuickLinkPage from "./pages/QuickLinkPage"; //Import QuickLinkPage component
 import TermsOfServicePage from './pages/TermsOfServicePage'; //Import TermsOfServicePage
+import ReviewPage from './pages/ReviewPage'; //Import Review Page
+import Formspage from './pages/FormsPage'; //Import Forms Page
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'; // Import PrivacyPolicyPage component
 import reportWebVitals from './reportWebVitals'; //Import for measuring performance metrics
 import {
   createBrowserRouter, //Import method to create a browser router for navigation
   RouterProvider, // Import RouterProvider to provide routing capabilities
 } from "react-router-dom"; // Import routing library for React
-import PrivacyPolicyPage from './pages/PrivacyPolicyPage'; // Import PrivacyPolicyPage component
 
 // router to go to different pages
 const router = createBrowserRouter([
   // paths to go to each seperate page
   {
-    path:"/", // Home route
-    element: <App/>, //Render the App component for the home page
+    path: "/", // Home route
+    element: <App />, //Render the App component for the home page
   },
   {
-    path:"/about", // Route for the About page
-    element: <AboutPage/>, //Render the AboutPage component 
+    path: "/about", // Route for the About page
+    element: <AboutPage />, //Render the AboutPage component 
   },
   {
-    path:"/contact", // Route for Contact page
-    element: <ContactPage/>, //Render the ContactPage component 
+    path: "/contact", // Route for Contact page
+    element: <ContactPage />, //Render the ContactPage component 
   },
   {
-    path:"/faq", // Route for Faq page
-    element: <FaqPage/>, // Render the FaqPage component
+    path: "/faq", // Route for Faq page
+    element: <FaqPage />, // Render the FaqPage component
   },
   {
-    path:"/payment", // Route for the Payment Page
-    element: <PaymentPage/>, //Render the Payment Page 
+    path: "/payment", // Route for the Payment Page
+    element: <PaymentPage />, //Render the Payment Page 
   },
   {
-    path:"/quick", // Route for the QuickLink page
-    element: <QuickLinkPage/>, // Render the QuickLink page
+    path: "/quick", // Route for the QuickLink page
+    element: <QuickLinkPage />, // Render the QuickLink page
   },
   {
-    path:"/term", // Route for the TermofService page
-    element: <TermsOfServicePage/>, //Render the QuickLink page
+    path: "/term", // Route for the TermofService page
+    element: <TermsOfServicePage />, //Render the QuickLink page
   },
   {
-    path:"/privacy", // Route for the Privacy Policy page
-    element: <PrivacyPolicyPage/>, // Render the Privacy Policy Page
+    path: "/privacy", // Route for the Privacy Policy page
+    element: <PrivacyPolicyPage />, // Render the Privacy Policy Page
+  },
+  {
+    path: "/review", // Route for the Review page
+    element: <ReviewPage />, // Render the Privacy Policy Page
+  },
+  {
+    path: "/forms", // Route for the Forms page
+    element: <Formspage />, // Render the Forms Page
   },
 ]);
 
@@ -56,7 +66,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 //Render the RouteProvider with the defined router to manage navigation
 root.render(
-  <RouterProvider router={router} /> 
+  <RouterProvider router={router} />
 );
 
 // If you want to start measuring performance in your app, pass a function
