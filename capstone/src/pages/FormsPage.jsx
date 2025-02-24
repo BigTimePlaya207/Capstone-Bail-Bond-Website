@@ -5,9 +5,12 @@ import MainLayout from '../layout/MainLayout'; // Import the MainLayout componen
 function FormsPage() {
     return (
         <MainLayout>
-            <div>FormsPage
+            <div class="infotext">
+                <p>
+                    Download and print to fill out form, then send scanned form to Stanleybailbondsllc@gmail.com
+                </p>
                 <a href="/downloads/Bail_Bond_Application_2024.pdf" download="Bail_Bond_Application_2024.pdf" target="_blank" rel="noreferrer">
-                    <button>Download .pdf file</button>
+                    <button class='button1'>Download Form</button>
                 </a>
             </div>
         </MainLayout>
