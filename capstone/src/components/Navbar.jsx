@@ -17,6 +17,7 @@ function Navbar() {
             <li><Link to="/faq">FAQ</Link></li>{/* Link to FAQ page */}
             <li><Link to="/payment">Payment Options</Link></li>{/* Link to Payment Options page */}
             <li><Link to="/quick">Quick Links</Link></li>{/* Link to Quick Links page */}
+            <li><Link to="/forms">Forms</Link></li>{/* Link to Forms page */}
         </ul>
     </div>
   )

@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css'; // Import the CSS styling the App component 
 import MainLayout from './layout/MainLayout'; // Import MainLayout component for consistent layout
 

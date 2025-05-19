@@ -7,8 +7,8 @@ import ContactPage from './pages/ContactPage'; //Import ContactPage component
 import FaqPage from './pages/FaqPage'; //Import FaqPage component 
 import PaymentPage from './pages/PaymentPage'; //Import PaymentPage component
 import QuickLinkPage from "./pages/QuickLinkPage"; //Import QuickLinkPage component
+import Formspage from './pages/FormsPage'; //Import Forms Page
 import TermsOfServicePage from './pages/TermsOfServicePage'; //Import TermsOfServicePage
-import ReviewPage from './pages/ReviewPage'; //Import Review Page
 import reportWebVitals from './reportWebVitals'; //Import for measuring performance metrics
 import {
   createBrowserRouter, //Import method to create a browser router for navigation
@@ -51,8 +51,8 @@ const router = createBrowserRouter([
     element: <PrivacyPolicyPage/>, // Render the Privacy Policy Page
   },
   {
-    path:"/review", // Route for the Review page
-    element: <ReviewPage/>, // Render the Privacy Policy Page
+    path: "/forms", // Route for the Forms page
+    element: <Formspage />, // Render the Forms Page
   },
 ]);
 
