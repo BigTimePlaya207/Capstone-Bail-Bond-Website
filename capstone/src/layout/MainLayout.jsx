@@ -4,6 +4,8 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 // Import Footer component for the bottom of the layout
 import Footer from '../components/Footer'
+// Import LeaveReviewButton component for user feedback
+import LeaveReviewButton from '../components/ReviewButton'
 // Import MainLAyout
 import './MainLayout.css';
 
@@ -13,6 +15,7 @@ function MainLayout({ children }) {
         <div>
             <Navbar></Navbar> {/* Render the Navbar component */}
             <div>{children}</div> {/* Render child components or content passed to MainLayout */}
+            <LeaveReviewButton></LeaveReviewButton> {/* Render the button for leaving a review */}
             <Footer></Footer> {/* Render the Footer component */}
         </div>
     )
