@@ -1,71 +1,140 @@
-/* Style for the payment section header */
+/* General body reset if not already applied */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+/* Header at top of payment section */
 .payment-header {
-    color: white; /* Sets the text color to white */
-    text-align: center; /* Centers the text horizontally */
-    margin-top: 20px; /* Adds a 20px margin above the header */
+  color: white;
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Style for the title of the payment options section */
+/* Title under the header */
 .payment-options-title {
-    color: white; /* Sets the text color to white */
-    text-align: center; /* Centers the title horizontally */
-    font-size: 2.5rem; /* Sets the font size to 2.5rem (large) */
-    font-weight: bold; /* Makes the title text bold */
-    margin-bottom: 20px; /* Adds a 20px margin below the title */
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-/* Container for the payment options with horizontal layout */
+/* Container for all payment options */
 .payment-options {
-    color: white; /* Sets text color to white */
-    display: flex; /* Uses flexbox layout for the payment options */
-    justify-content: space-around; /* Distributes items evenly with space around each one */
-    margin-bottom: 10px; /* Adds a 10px margin below the payment options container */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  gap: 20px; /* space between items */
+  margin-bottom: 20px;
 }
 
-/* Styles for the images inside the payment options (icons) */
-.payment-options img {
-    width: 100px; /* Sets the image width to 100px */
-    height: 100px; /* Sets the image height to 100px */
-    object-fit: contain; /* Ensures the image is resized to fit within its container without distortion */
-    transition: transform 0.2s; /* Adds a smooth transition effect for transformations (like scaling) */
-}
-
-/* Hover effect for the payment option images: slightly zoom in */
-.payment-options img:hover {
-    transform: scale(1.1); /* Increases the size of the image by 10% on hover */
-}
-
-/* Style for the labels next to the payment option images */
-.payment-options span {
-    color: white; /* Sets the text color to white */
-    margin-left: 10px; /* Adds a 10px margin to the left of the text */
-    font-weight: bold; /* Makes the text bold */
-}
-
-/* Style for each individual payment option */
+/* Each payment option block (horizontal image + text) */
 .payment-option {
-    color: white; /* Sets the text color to white */
-    display: flex; /* Uses flexbox layout to align the icon and text */
-    align-items: center; /* Vertically centers the items within the flex container */
-    margin-bottom: 10px; /* Adds a 10px margin below each payment option */
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 10px;
+  flex: 1 1 250px; /* responsive sizing */
+  min-width: 250px;
+  justify-content: center;
 }
 
-/* Styles for the images inside individual payment options (larger icons) */
-.payment-option img {
-    width: 130px; /* Sets the image width to 130px */
-    height: 130px; /* Sets the image height to 130px */
-    object-fit: contain; /* Ensures the image is resized to fit within its container without distortion */
-    transition: transform 0.2s; /* Adds a smooth transition effect for transformations (like scaling) */
-}
-
-/* Hover effect for the individual payment option images: slightly zoom in */
-.payment-option img:hover {
-    transform: scale(1.1); /* Increases the size of the image by 10% on hover */
-}
-
-/* Style for the labels next to the individual payment option images */
+/* Text next to each payment icon */
 .payment-option span {
-    color: white; /* Sets the text color to white */
-    margin-left: 10px; /* Adds a 10px margin to the left of the text */
-    font-weight: bold; /* Makes the text bold */
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
+
+/* Images inside payment options */
+.payment-option img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.payment-option img:hover {
+  transform: scale(1.1);
+}
+
+/* Secondary container with smaller icon options (if used) */
+.payment-options img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.payment-options img:hover {
+  transform: scale(1.1);
+}
+
+.payment-options span {
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* ========== Responsive Adjustments ========== */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .payment-options-title {
+    font-size: 2rem;
+  }
+
+  .payment-option img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .payment-option span {
+    font-size: 1rem;
+  }
+
+  .payment-options img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .payment-options-title {
+    font-size: 1.5rem;
+  }
+
+  .payment-option {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .payment-option img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .payment-option span {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .payment-options img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .payment-options {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

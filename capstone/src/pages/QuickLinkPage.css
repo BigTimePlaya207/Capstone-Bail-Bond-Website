@@ -1,41 +1,86 @@
-/* QuickLinkPage.css */
-
+/* Header text at the top of the page */
 .link-header {
-    margin-top: 20px;
-    color: white;
-    margin-bottom: 100px;
-    text-align: center;
+  margin-top: 20px;
+  color: white;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
+/* Container for all quick links */
 .qlcontainer {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem; /* Space between each quicklink-item */
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 0 1rem; /* Adds padding on small screens */
+  box-sizing: border-box;
 }
 
+/* Each individual quick link + description row */
 .quicklink-item {
-    display: flex;
-    align-items: center; /* Align link and description vertically */
-    gap: 0.5rem; /* Space between the link and the description */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  justify-content: flex-start;
 }
 
+/* The actual clickable link */
 .quicklink {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 1.5rem;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.5rem;
+  word-break: break-word;
 }
 
 .quicklink:hover {
-    text-decoration: underline; /* Underline only the link on hover */
+  text-decoration: underline;
 }
 
+/* Text description next to the link */
 .description {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: white; /* Differentiates description text */
-    margin: 0; /* Removes extra space around description */
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+  text-decoration: none;
+  word-break: break-word;
 }
 
 .description:hover {
-    text-decoration: none; /* Description remains unaffected on hover */
+  text-decoration: none;
+}
+
+/* ========== Responsive Adjustments ========== */
+
+/* Tablet-friendly layout */
+@media (max-width: 900px) {
+  .link-header {
+    font-size: 2rem;
+    margin-bottom: 60px;
+  }
+
+  .quicklink,
+  .description {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+  .link-header {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .quicklink-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .quicklink,
+  .description {
+    font-size: 1.1rem;
+    text-align: left;
+  }
 }
