@@ -12,9 +12,7 @@ function App() {
 
         <h1 className="main-title">Stanley Bail Bonds LLC</h1> {/* Main title of the */}
         <div className="container"> {/* Containter for images and tagline */}
-          <img src="/images/handcuff.png" alt="" className="handcuff" /> {/* Image for handcuff */}
           <div className="tagline">Locked up? We can get you out!</div> {/* Tagline text */}
-          <img src="/images/open_handcuff.png" alt="" className="open_handcuff" /> {/* Image of an open handcuff */}
         </div>
         <div className="info-box"> {/* Information for the contacy details */}
           <p>Open 24/7</p> {/* Availability Information */}
