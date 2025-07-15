@@ -7,7 +7,6 @@ import ContactPage from './pages/ContactPage'; //Import ContactPage component
 import FaqPage from './pages/FaqPage'; //Import FaqPage component 
 import PaymentPage from './pages/PaymentPage'; //Import PaymentPage component
 import QuickLinkPage from "./pages/QuickLinkPage"; //Import QuickLinkPage component
-import Formspage from './pages/FormsPage'; //Import Forms Page
 import TermsOfServicePage from './pages/TermsOfServicePage'; //Import TermsOfServicePage
 import reportWebVitals from './reportWebVitals'; //Import for measuring performance metrics
 import {
@@ -49,10 +48,6 @@ const router = createBrowserRouter([
   {
     path:"/privacy", // Route for the Privacy Policy page
     element: <PrivacyPolicyPage/>, // Render the Privacy Policy Page
-  },
-  {
-    path: "/forms", // Route for the Forms page
-    element: <Formspage />, // Render the Forms Page
   },
 ]);
 
