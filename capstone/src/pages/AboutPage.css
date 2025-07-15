@@ -1,84 +1,147 @@
-/* Reset default margin for the body element and set the font family */
+/* Reset body margin and set font */
 body {
-  margin: 0; /* Remove default margin */
-  font-family: Arial, sans-serif; /* Set the font family to Arial or sans-serif fallback */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: white;
+  box-sizing: border-box;
+  padding: 0 1rem;
 }
 
-/* Styling for the About Section title */
+/* About page main title */
 .About-title {
-  color: white; /* Set text color to white */
-  font-size: 3rem; /* Set font size to 3rem */
-  margin-left: 300px; /* Add left margin of 300px */
-  margin-top: 40px; /* Add top margin of 40px */
+  color: white;
+  font-size: 3rem;
+  margin-left: 300px;
+  margin-top: 40px;
 }
 
-/* Styling for the owner background text */
-.owner-background{
-  font-size: 1.2rem; /* Set font size to 1.2rem */
-  margin-bottom: 40px; /*Add bottom margin of 40px */
-}
-/* Styling for the owner name above infromation */
-.owner-name{
-  font-size: 1.5rem; /* Set font size to 1.5rem */
-  margin-bottom: -20px; /* Add bottom margin of -20px makes owner name close to owner information */
-}
-/* Styling for the owner information */
-.owner-info{
-  font-size: 1.2rem; /* Set font size to 1.2rem */
-  margin-bottom: 40px; /* Add bottom margin of 40px */
-  margin-top: 20px; /* Add top margin of 20px */
-}
-
-/* Styling for mission title */
-.mission-title{
-  font-size: 1.5rem; /* Set font size to 1.5rem */
-}
-
-/* Styling for mission text */
-.mission{
-  font-size: 1.2rem; /* Set font size to 1.2rem */
-}
-
-/* Common styles for background and mission sections */
-.background, .mission{
-  width: 90%; /* Set maximum width to 90% of the parent container */
-  max-width: 600px; /* Set maximum width to 600px */
-  text-align: justify; /* Justify the text alignment */
-  margin-bottom: 40px; /* Add bottom margin of 40px */
-}
-
-/* Styles for split layout */
+/* Left and right split sections */
 .split {
-  height: 100%; /* Set height to 100% of the parent */
-  width: 50%; /* Set width to 50% */
-  position: fixed; /* Fix position to the viewport */
-  z-index: 1; /* Set z-index for stacking order */
-  overflow-x: hidden; /* Hide horizontal overflow */
-  padding-top: 20px; /* Add top padding of 20px */
+  height: auto;
+  width: 50%;
+  position: relative; /* changed from fixed to relative */
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-sizing: border-box;
+  float: left;
 }
 
-/* Positioning for the left split section */
+/* Position left split */
 .left {
-  left: 75px; /* Position 75px from the left */
+  left: 0; /* reset from 75px */
+  margin-left: 300px; /* keep your 300px left margin */
+  text-align: left;
 }
 
-/* Positioning for the right split section */
+/* Position right split */
 .right {
-  right: -125px; /* Move the image more to the right */
+  float: right;
+  right: 0; /* reset from -125px */
+  margin-right: 75px;
+  text-align: center;
 }
 
-/* Left-aligned text styles */
+/* Left-aligned text inside left split */
 .left-align {
-  color: white; /* Set text color to white */
-  margin-left: 0; /* Remove left margin */
-  padding: 20px; /* Add padding of 20px */
-  text-align: left; /* Left align text */
-  line-height: 1.5; /* Set line height to 1.5 for spacing */
+  color: white;
+  margin-left: 0;
+  padding: 20px;
+  text-align: left;
+  line-height: 1.5;
 }
 
-/* Styles for mission text  */
+/* Owner background text */
+.owner-background {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Owner name */
+.owner-name {
+  font-size: 1.5rem;
+  margin-bottom: -20px;
+}
+
+/* Owner info */
+.owner-info {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+/* Mission title */
+.mission-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Mission text */
 .mission {
-  line-height: 1.8; /* Adjusted line-height for better readability */
-  white-space: pre-wrap; /* Preserve line breaks */
+  font-size: 1.2rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
 }
 
+/* Image inside right split */
+.split.right img {
+  height: 600px;
+  width: 600px;
+  position: relative;
+  right: 30px;
+  max-width: 100%; /* make it responsive */
+  height: auto; /* keep aspect ratio */
+  border-radius: 8px;
+}
+
+/* Clear floats after splits */
+div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 900px) {
+  .About-title {
+    font-size: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .split {
+    width: 100%;
+    float: none;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 10px 0;
+  }
+
+  .left-align {
+    text-align: center;
+  }
+
+  .split.right img {
+    width: 90%;
+    height: auto;
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .About-title {
+    font-size: 2rem;
+  }
+
+  .owner-name {
+    font-size: 1.3rem;
+  }
+
+  .owner-background,
+  .owner-info,
+  .mission {
+    font-size: 1rem;
+  }
+}
