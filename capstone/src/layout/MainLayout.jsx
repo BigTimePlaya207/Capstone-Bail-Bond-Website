@@ -6,6 +6,8 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 // Import LeaveReviewButton component for user feedback
 import LeaveReviewButton from '../components/ReviewButton'
+// Import MainLAyout
+import './MainLayout.css';
 
 //Define the MainLayout functional component, which accepts children as props
 function MainLayout({ children }) {

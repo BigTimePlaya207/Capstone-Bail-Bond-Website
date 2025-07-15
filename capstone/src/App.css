@@ -1,132 +1,174 @@
-/* Reset margin and padding for all elements */
+/* Reset & Box-sizing */
 * {
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Container styling for flex layout */
-.container{
-  display: flex; /* Enable flexbox layout */
-  align-items: center; /* Center items vertically */
-  justify-content:center; /* Space between flex items */
-  gap: 10px;
-}
-
-/* Styling for tagline text */
-.tagline{
-  color: white; /* Set text color to white */
-  margin: 0 10px; /* Add horizontal margin */
-  white-space: nowrap; /* Prevent line breaks */
-  font-size: 2rem; /* Set font size to 2rem */
-  display: inline-block; /* Display as an inline-block element */
-  font-weight: bold; /* Makes tagline bold */
-}
-
-/* Styling for handcuff image */
-.handcuff{
-  width: 50px; /* Set width of the handcuff image */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Styling for open handcuff image */
- .open_handcuff{
-  width: 100px; /* Set width of the open handcuff image */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Navbar container styling */
-.navbar {
-  display: flex; /* Enable flexbox for navbar */
-  justify-content: space-between; /* Space items evenly */
-  padding: 10px 16px; /* Add padding inside navbar */
-  margin-bottom: 16px; /* Spacing below the navbar */
-  text-align: center; /* Center text inside navbar */
-  margin-right: 250px; /* Add right margin */
-}
-
-/* Navbar menu styling */
-.navbar-menu {
-  display: flex; /* Enable flexbox layout for navbar */
-  list-style-type: none; /* Remove bullet points from list  */
-  gap: 100px; /* Space between menu items */
-  margin: 0; /* Remove default margin */
-  align-items: center; /* Center items vertically */
-}
-
-/* Styling for navbar links */
-.navbar-menu li a {
-  text-decoration: none; /* Remove underline from links */
-  color: white; /* Set text color to white */
-}
-
-/* Set box-sizing to border-box for all elements */
-* {
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-
-/* Styling for the body and html elements */
+/* Body and HTML Styling */
 body,
 html {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  /* Set gradient background */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(17, 146, 209, 1) 80%, rgba(255, 255, 255, 1) 100%);
-  height: 100vh; /* Set height to 100 percent of the viewport */
-  background-repeat: no-repeat; /* Prevent background image from repeating */
-  background-attachment: fixed; /* Fix background image during scrolling */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* Styling for main-title */
+/* Main Title */
 .main-title {
-  text-align: center; /* Center text */
-  color: white; /* Set text to white */
-  font-size: 4rem; /* Set font size to 4 rem */
-  margin: 0; /* Remove margin */
-  padding: 20px 0; /* Add vertical padding */
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  margin: 0;
+  padding: 20px 0;
 }
 
-/* Styling for information boxes */
+/* Container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Tagline */
+.tagline {
+  color: white;
+  margin: 0 10px;
+  white-space: nowrap;
+  font-size: 2rem;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Images */
+.handcuff {
+  width: 50px;
+  height: auto;
+}
+
+.open_handcuff {
+  width: 100px;
+  height: auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  margin-right: auto;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Info Box */
 .info-box {
-  padding: 20px; /* Add padding inside the info box */
-  border-radius: 10px; /* Round corners of the box */
-  margin-top: 20px; /* Add top margin */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
-/* Styling for pargraphs inside info boxes */
 .info-box p {
-  color: white; /* Set text color to white */
-  margin: 0.5rem 0; /* Add vertical margin */
-  font-size: 2rem; /* Set font size to 2rem */
-  margin-bottom: 40px; /* Add bottom margin */
+  color: white;
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 
-/* Styling for footer */
-.footer{
-  color: black; /* Set text color to black */
-  display: flex; /* Enable flexbox layout for the footer */
-  justify-content: flex-end; /* Align items to the right */
-  align-items: center; /* Center items vertically */
-  position: fixed; /* Fix footer at the bottom */
-  font-size: 1.2rem; /* Set font size to 1.2rem */
-  bottom: 0; /* Position at the bottom of the viewport */
-  right: 0; /* Position to the right */
+/* Footer */
+.footer {
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
 }
 
-/* Footer menu styling */
+/* Footer Menu */
 .footer-menu {
-  list-style-type: none; /* Remove bullet points */
-  gap: 100px; /* Space between footer menu items */
+  list-style-type: none;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* Styling for list items in the footer menu */
-.footer-menu li{
-  display: inline; /* Display list items inline */
-  margin: 0 15px; /* Add horizontal margin */
+.footer-menu li {
+  display: inline;
+  margin: 0 15px;
 }
 
-/* Styling for links in the footer menu */
 .footer-menu li a {
-  text-decoration: none; /* Remove underline */
-  color: black; /* Set text to black */
-  font-weight: bold; /* Make text bold */
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tagline {
+    font-size: 1.2rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+    position: static; /* Prevents overlap with content */
+  }
+
+  .info-box p {
+    font-size: 1.2rem;
+  }
+
+  .open_handcuff {
+    width: 60px;
+  }
+
+  .handcuff {
+    width: 30px;
+  }
 }

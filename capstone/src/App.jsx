@@ -17,7 +17,7 @@ function App() {
           <img src="/images/open_handcuff.png" alt="" className="open_handcuff" /> {/* Image of an open handcuff */}
         </div>
         <div className="info-box"> {/* Information for the contacy details */}
-          <p>Open 24-7</p> {/* Availability Information */}
+          <p>Open 24/7</p> {/* Availability Information */}
           <p>Operating in SC, NC, FL, and TX</p> {/* States of Operation */}
           <p>(843)-240-9240</p> {/* Contact phone number */}
           <p>Stanleybailbondsllc@gmail.com</p> {/* Contact email */}

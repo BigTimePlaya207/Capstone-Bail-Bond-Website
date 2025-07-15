@@ -7,9 +7,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <div className='navbar'>
-        <div className='logo'>
-            Stanley Bail Bonds 
-        </div>
+ 
         <ul className='navbar-menu'> {/* Unordered list for navbar menu items*/}
             <li><Link to="/">Home</Link></li>{/* Link to Home page */}
             <li><Link to="/about">About</Link></li>{/* Link to About Policy page */}

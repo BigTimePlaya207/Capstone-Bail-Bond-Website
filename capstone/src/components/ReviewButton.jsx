@@ -22,7 +22,7 @@ function LeaveReviewButton() {
       fontSize: '16px', // Sets font size of the button text 
       fontWeight: 'bold', // Makes the button text bold
       color: 'white', // Sets the text color of the button to white
-      backgroundColor: '#000000',  // Green button background
+      backgroundColor: 'black',  // Green button background
       border: 'none', // Removes the default button of the border
       borderRadius: '5px', // Rounds the corner of button with a radius of 5 pixles
       textDecoration: 'none',  // Remove underline from the link
