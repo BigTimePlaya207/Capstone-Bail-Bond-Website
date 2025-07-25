@@ -25,7 +25,12 @@ function PaymentPage() {
         <div>
           {/* Cash App Payment Option */}
           <div className="payment-option">
-             <a href="https://cash.app/$StanleyBailBonds" target="_blank" rel="noopener noreferrer">
+             <a
+               href="https://cash.app/$StanleyBailBonds" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="payment-link" 
+             >
             <img src="/images/cashapp.png" alt="Cash App" /> {/* Image for Cash App payment option */}
             <span>$StanleyBailBonds</span> {/* Cash App handle */}
             </a>
@@ -33,7 +38,12 @@ function PaymentPage() {
 
           {/* Venmo Payment Option */}
           <div className="payment-option">
-            <a href="https://venmo.com/u/StanleyBail-Bonds" target="_blank" rel="noopener noreferrer">
+            <a 
+              href="https://venmo.com/u/StanleyBail-Bonds" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="payment-link"
+            >
             <img src="/images/venmo.png" alt="Venmo" /> {/* Image for Venmo payment option */}
             <span>@StanleyBail-Bonds</span> {/* Venmo handle */}
             </a>

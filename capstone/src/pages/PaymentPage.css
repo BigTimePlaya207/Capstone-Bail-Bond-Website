@@ -138,3 +138,10 @@ body {
   }
 }
 
+/* Ensure link layout behaves like the payment-option container */
+.payment-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
