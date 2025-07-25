@@ -54,6 +54,17 @@ function QuickLink() {
                     </a>
                     <span className="description"> - Learn about the office responsible for prosecuting criminal cases in Georgetown County.</span>
                 </div>
+                <div className="quicklink-item">
+                    <a
+                        href="https://www.georgetownsc.gov/governmental_services/departments/municipal_court.php"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="quicklink"
+                    >
+                        Georgetown County Municipal Court
+                    </a>
+                    <span className="description"> - Access court services, payment options, and case information for Georgetown's Municipal Court.</span>
+                </div>
             </div>
         </MainLayout>
     );

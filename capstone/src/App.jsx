@@ -16,7 +16,8 @@ function App() {
         </div>
         <div className="info-box"> {/* Information for the contacy details */}
           <p>Open 24/7</p> {/* Availability Information */}
-          <p>Operating in SC, NC, FL, GA, TN, CT, LA, MS</p> {/* States of Operation */}
+          <p>Operating in
+             SC, NC, FL, GA, TN, CT, LA, MS</p> {/* States of Operation */}
           <p>(843)-240-9240</p> {/* Contact phone number */}
           <p>Stanleybailbondsllc@gmail.com</p> {/* Contact email */}
         </div>

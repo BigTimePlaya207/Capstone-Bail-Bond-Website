@@ -10,18 +10,18 @@ const faqData = [
     },
     {
         question: 'How long will it take for a defendant to be released once bond is posted?',
-        answer: 'The time it takes for a defendant to be released after a bond is posted can vary, but it ranges up to 12 hours.',
+        answer: 'Release time is determined by the jail/detention center.',
     },
     {
         question: 'Are bail bond fees refundable?',
-        answer: 'Bail bond fees are not refundable.',
+        answer: 'Bail bond fees are NOT refundable.',
     },
     {
         question: 'What time is bonding court?',
         answer: 'Bonding court times vary by county and state. Georgetown County times are 9am and 3pm. Georgetown City Time is at 11am. Court times are subject to change on holidays and weekends.'
     },
     {
-        question: 'Bond has been posted. Why is my loved one not been released yet?',
+        question: 'Bond has been posted. Why is my loved one still incarcerated?',
         answer: 'Release times are determined at the jail/detention center.',
     },
     {
@@ -43,6 +43,10 @@ const faqData = [
     {
         question: 'Can a bail bondsman refer an attorney to a defendant?',
         answer: 'No',
+    },
+    {
+      question: 'Is there a fee to use my debit or credit card?',
+      answer: 'Yes, there is a 5% fee when using your debit or credit card.',
     },
 ];
 
