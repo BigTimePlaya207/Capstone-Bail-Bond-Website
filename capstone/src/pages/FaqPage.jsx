@@ -9,8 +9,8 @@ const faqData = [
         answer: 'A bail bond is where a person spends money to secure the release of a person who has been arrested and is awaiting trial.'
     },
     {
-        question: 'How long will it take for a defendant to be released once bond is posted?',
-        answer: 'Release time is determined by the jail/detention center.',
+        question: 'Can I use a Bondsman for Family Court?',
+        answer: 'No you can NOT use a Bondsman for child support.',
     },
     {
         question: 'Are bail bond fees refundable?',
@@ -47,6 +47,10 @@ const faqData = [
     {
       question: 'Is there a fee to use my debit or credit card?',
       answer: 'Yes, there is a 5% fee when using your debit or credit card.',
+    },
+    {
+      question: 'Where are we located?',
+      answer: 'We are a mobile business based in Georgetown, South Carolina, and we meet cleints at a convenient mutual location.',
     },
 ];
 

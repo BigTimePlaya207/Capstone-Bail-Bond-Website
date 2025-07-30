@@ -28,7 +28,7 @@
   
 /* The question part of each FAQ item */
   .faq-question {
-    padding: 15px; /* Adds 15px padding arpund the question */
+    padding: 10px; /* Adds 15px padding arpund the question */
     background-color: #f7f7f7; /* Sets background of questions to light gray */
     cursor: pointer; /* Changes the cursor to a pointer on hover, indicating interactivity */
     font-weight: bold; /* Makes the question text bold */

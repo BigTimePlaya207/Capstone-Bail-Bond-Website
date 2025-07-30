@@ -2,26 +2,25 @@ import React from 'react';
 import './App.css'; // Import the CSS styling the App component 
 import MainLayout from './layout/MainLayout'; // Import MainLayout component for consistent layout
 
-// Define the App functional component 
 function App() {
   return (
-    <MainLayout> {/* Use MainLayout to wrap the content for a consistent structure */}
+    <MainLayout>
       <div className="App">
-        <header className="App-header">
-        </header>
+        <header className="App-header"></header>
 
-        <h1 className="main-title">Stanley Bail Bonds LLC</h1> {/* Main title of the */}
-        <div className="container"> {/* Containter for images and tagline */}
-          <div className="tagline">Locked up? We can get you out!</div> {/* Tagline text */}
-        </div>
-        <div className="info-box"> {/* Information for the contacy details */}
-          <p>Open 24/7</p> {/* Availability Information */}
-          <p>Operating in
-             SC, NC, FL, GA, TN, CT, LA, MS</p> {/* States of Operation */}
-          <p>(843)-240-9240</p> {/* Contact phone number */}
-          <p>Stanleybailbondsllc@gmail.com</p> {/* Contact email */}
-        </div>
+        {/* Flashing Oval */}
+        <div className="flashing-oval">Mobile Office</div>
 
+        <h1 className="main-title">Stanley Bail Bonds LLC</h1>
+        <div className="container">
+          <div className="tagline">Locked up? We can get you out!</div>
+        </div>
+        <div className="info-box">
+          <p>Open 24/7... Including weekends and holidays</p>
+          <p>Operating in SC, NC, FL, GA, TN, CT, LA, MS</p>
+          <p>(843)-240-9240</p>
+          <p>Stanleybailbondsllc@gmail.com</p>
+        </div>
       </div>
     </MainLayout>
   );

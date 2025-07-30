@@ -163,3 +163,24 @@ html {
     width: 30px;
   }
 }
+
+.flashing-oval {
+  background-color: yellow;
+  color: black;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  width: fit-content;
+  margin: 20px auto;
+  animation: flash 1s infinite;
+  box-shadow: 0 0 10px yellow;
+}
+
+/* Flashing animation */
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}

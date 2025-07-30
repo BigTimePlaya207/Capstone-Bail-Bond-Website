@@ -36,13 +36,13 @@ function PaymentPage() {
           {/* Venmo */}
           <div className="payment-option">
             <a 
-              href="https://venmo.com/u/StanleyBail-Bonds" 
+              href="https://venmo.com/u/StanleyBailBonds" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="payment-link"
             >
               <img src="/images/venmo.png" alt="Venmo" />
-              <span>@StanleyBail-Bonds</span>
+              <span>@StanleyBailBonds</span>
             </a>
           </div>
 
@@ -56,10 +56,16 @@ function PaymentPage() {
 
           {/* Chime */}
           <div className="payment-option">
-            <div className="payment-link">
+            <a
+            href="https://app.chime.com/link/qr?u=StanleyBailBonds"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="payment-link"
+            >
+          
               <img src="/images/chime.png" alt="Chime" />
-              <span>$Michael-Stanley-184</span>
-            </div>
+              <span>$StanleyBailBonds</span>  
+            </a>
           </div>
 
           {/* Cash */}
@@ -92,7 +98,9 @@ function PaymentPage() {
           {/* PayPal */}
           <div className="payment-option">
             <a 
-              href="mailto:lmstanley5182002@yahoo.com" 
+              href="https://paypal.me/StanleyBailBonds"
+              target="_blank"
+              rel="noopener noreferrer"
               className="payment-link"
             >
               <img src="/images/paypal.png" alt="Paypal" />
