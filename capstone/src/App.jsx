@@ -19,7 +19,7 @@ function App() {
           <p>Open 24/7... Including weekends and holidays</p>
           <p>Operating in SC, NC, FL, GA, TN, CT, LA, MS</p>
           <p>(843)-240-9240</p>
-          <p>Stanleybailbondsllc@gmail.com</p>
+        <a href="mailto:Stanleybailbondsllc@gmail.com">Stanleybailbondsllc@gmail.com</a><br />
         </div>
       </div>
     </MainLayout>

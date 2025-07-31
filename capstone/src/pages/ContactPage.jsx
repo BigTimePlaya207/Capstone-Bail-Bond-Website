@@ -8,18 +8,20 @@ function ContactPage() {
   return (
     <MainLayout> {/* Wrapping the page content in MainLayout component to maintain consistent layout across pages */}
       <div className='text_block'> {/* A div with the 'text_block' class for styling the contact info */}
-        
+
         {/* Contact Information */}
-        Contact us at<br /> {/* Line break after this piece of information */}
-        (843)-240-9240<br /> {/* Phone number, with a line break after */}
-        Stanleybailbondsllc@gmail.com<br /> {/* Email address, with a line break after */}
-        
-        <br /> {/* Another line break to provide spacing */}
-        
+        Contact us at<br />
+        <a href="tel:8432409240">(843)-240-9240</a><br />
+        <a href="mailto:Stanleybailbondsllc@gmail.com">Stanleybailbondsllc@gmail.com</a><br />
+
+        <br />
+
         {/* Additional contact methods */}
-        Facebook Messenger<br /> {/* Label for another contact method */}
-        https://m.me/StanleyBailbonds {/* Facebook Messenger link to initiate a conversation */}
-        
+        Facebook Messenger<br />
+        <a href="https://m.me/StanleyBailbonds" target="_blank" rel="noopener noreferrer">
+          https://m.me/StanleyBailbonds
+        </a>
+
       </div>
     </MainLayout>
   )

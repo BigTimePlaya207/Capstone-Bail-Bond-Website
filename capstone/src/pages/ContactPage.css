@@ -58,3 +58,14 @@ body {
   }
 }
 
+/* Make all links inside .text_block white */
+.text_block a {
+  color: white;
+  text-decoration: underline; /* Optional: adds underline to indicate it's a link */
+}
+
+/* Optional: change color when hovering */
+.text_block a:hover {
+  color: #ccc; /* Light gray on hover */
+}
+

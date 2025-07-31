@@ -184,3 +184,15 @@ html {
   50% { opacity: 0.4; }
   100% { opacity: 1; }
 }
+
+/* Style anchor tags inside info-box */
+.info-box a {
+  color: white;
+  font-size: 2rem; /* Match .info-box p font-size */
+  text-decoration: underline; /* Optional: underline to show it's a link */
+}
+
+/* Optional: adjust hover effect */
+.info-box a:hover {
+  color: #ccc;
+}

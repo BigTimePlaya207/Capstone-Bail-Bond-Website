@@ -5,8 +5,6 @@ function Footer() {
   return (
     <div className='footer'>
       <ul className='footer-menu'>
-        <li><Link to="/privacy">Privacy Policy</Link></li>
-        <li><Link to="/term">Term Of Service</Link></li>
         <li>
           <a
             href="https://g.page/r/Ca8Aqhe_jumTEBE/review"
@@ -17,6 +15,8 @@ function Footer() {
             Leave a Review
           </a>
         </li>
+        <li><Link to="/privacy">Privacy Policy</Link></li>
+        <li><Link to="/term">Term Of Service</Link></li>
       </ul>
     </div>
   );
